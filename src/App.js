@@ -36,7 +36,7 @@ console.log(newName)
   return (
     <div className="container">
      {cards.map((card)=>(
-     <Card id={card.id} name={card.name} mail={card.email} phone={card.phone} web={card.web} 
+     <Card key={card.id} id={card.id} name={card.name} mail={card.email} phone={card.phone} web={card.web} 
      onDelete={deleteCard}
      handleUpdate={updateData}
      setName={setNewName}
